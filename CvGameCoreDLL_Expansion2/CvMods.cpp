@@ -31,6 +31,17 @@ void CvPlayerTraits::SetLandTradeRouteRangeBonus(int bonus)
 	m_iLandTradeRouteRangeBonus = bonus;
 };
 
+void CvPlayerTraits::SetTradeRouteResourceModifier(int modifier)
+{
+	m_iTradeRouteResourceModifier = modifier;
+};
+
+void CvPlayerTraits::SetTradeReligionModifier(int modifier)
+{
+	m_iTradeReligionModifier = modifier;
+};
+
+
 
 
 

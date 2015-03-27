@@ -64,7 +64,7 @@ int CvLuaPlayer::lSetTraitCityStateFriendshipMod(lua_State* L)
 }
 
 //------------------------------------------------------------------------------
-//void SetTraitCityStateFriendshipMod(int iValue);
+//void SetTraitLandTradeRouteRangeBonusMod(int iValue);
 int CvLuaPlayer::lSetTraitLandTradeRouteRangeBonusMod(lua_State* L)
 {
 	CvPlayerAI* pkPlayer = GetInstance(L);
@@ -72,3 +72,25 @@ int CvLuaPlayer::lSetTraitLandTradeRouteRangeBonusMod(lua_State* L)
 	pkPlayer->GetPlayerTraits()->SetLandTradeRouteRangeBonus(iValue);
 	return 1;
 }
+
+//------------------------------------------------------------------------------
+//void SetTraitTradeRouteResourceMod(int iValue);
+int CvLuaPlayer::lSetTraitTradeRouteResourceMod(lua_State* L)
+{
+	CvPlayerAI* pkPlayer = GetInstance(L);
+	const int iValue = lua_tointeger(L, 2);
+	pkPlayer->GetPlayerTraits()->SetTradeRouteResourceModifier(iValue);
+	return 1;
+}
+
+//------------------------------------------------------------------------------
+//void SetTraitTradeReligionModifier(int iValue);
+int CvLuaPlayer::lSetTraitTradeReligionModifier(lua_State* L)
+{
+	CvPlayerAI* pkPlayer = GetInstance(L);
+	const int iValue = lua_tointeger(L, 2);
+	pkPlayer->GetPlayerTraits()->SetTradeReligionModifier(iValue);
+	return 1;
+}
+
+

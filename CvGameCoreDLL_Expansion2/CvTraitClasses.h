@@ -355,6 +355,8 @@ public:
 	void SetWonderProductionModifier(int rate);
 	void SetCityStateFriendshipModifier(int rate);
 	void SetLandTradeRouteRangeBonus(int bonus);
+	void SetTradeRouteResourceModifier(int modifier);
+	void SetTradeReligionModifier(int modifier);
 
 	// Accessor functions
 	bool HasTrait(TraitTypes eTrait) const;
