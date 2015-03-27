@@ -351,6 +351,10 @@ public:
 	// Foundation Mod changes
 	void SetPopulationUnhappinessModifier(int popUnhappinessModifier);
 	void SetExtraFoundedCityTerritoryClaimRange(int range);
+	void SetGreatScientistRateModifier(int rate);
+	void SetWonderProductionModifier(int rate);
+	void SetCityStateFriendshipModifier(int rate);
+	void SetLandTradeRouteRangeBonus(int bonus);
 
 	// Accessor functions
 	bool HasTrait(TraitTypes eTrait) const;

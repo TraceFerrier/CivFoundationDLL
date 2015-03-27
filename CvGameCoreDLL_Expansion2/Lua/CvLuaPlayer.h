@@ -996,6 +996,11 @@ protected:
 	static void PushModMethods(lua_State* L, int t);
 	static int lSetTraitPopUnhappinessMod(lua_State* L);
 	static int lSetTraitExtraFoundedCityTerritoryClaimRangeMod(lua_State* L);
+	static int lSetTraitSetGreatScientistRateMod(lua_State* L);
+	static int lSetTraitWonderProductionMod(lua_State* L);
+	static int lSetTraitCityStateFriendshipMod(lua_State* L);
+	static int lSetLandTradeRouteRangeBonusMod(lua_State* L);
+	static int lSetTraitLandTradeRouteRangeBonusMod(lua_State* L);
 };
 
 #endif //CVLUAPLAYER_H
