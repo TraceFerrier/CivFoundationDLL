@@ -328,6 +328,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\CvMods.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\CvNotificationClasses.cpp"
 				>
 			</File>
@@ -1419,6 +1423,10 @@
 			</File>
 			<File
 				RelativePath=".\Lua\CvLuaMap.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Lua\CvLuaMods.cpp"
 				>
 			</File>
 			<File

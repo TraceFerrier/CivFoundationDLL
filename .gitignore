@@ -1,3 +1,9 @@
+# Compiled source #
+###################
+BuildTemp/*
+BuildOutput/*
+*.ncb
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

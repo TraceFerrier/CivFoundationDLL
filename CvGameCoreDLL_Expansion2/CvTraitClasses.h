@@ -348,6 +348,10 @@ public:
 	void Reset();
 	void InitPlayerTraits();
 
+	// Foundation Mod changes
+	void SetPopulationUnhappinessModifier(int popUnhappinessModifier);
+	void SetExtraFoundedCityTerritoryClaimRange(int range);
+
 	// Accessor functions
 	bool HasTrait(TraitTypes eTrait) const;
 	int GetGreatPeopleRateModifier() const

@@ -984,6 +984,8 @@ void CvLuaPlayer::PushMethods(lua_State* L, int t)
 	Method(GetWarmongerPreviewString);
 	Method(GetLiberationPreviewString);
 
+	// Set up methods for Foundation Mod
+	PushModMethods(L, t);
 }
 //------------------------------------------------------------------------------
 void CvLuaPlayer::HandleMissingInstance(lua_State* L)

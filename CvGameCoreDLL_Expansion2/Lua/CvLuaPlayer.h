@@ -991,6 +991,11 @@ protected:
 	// Warmongering
 	static int lGetWarmongerPreviewString(lua_State* L);
 	static int lGetLiberationPreviewString(lua_State* L);
+
+	// Foundation Mod Changes
+	static void PushModMethods(lua_State* L, int t);
+	static int lSetTraitPopUnhappinessMod(lua_State* L);
+	static int lSetTraitExtraFoundedCityTerritoryClaimRangeMod(lua_State* L);
 };
 
 #endif //CVLUAPLAYER_H
