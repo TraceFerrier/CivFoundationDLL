@@ -1,3 +1,10 @@
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//!	 \file		CvMods.cpp
+//!
+//!		This file includes class method additions for the Foundation Mod.
+//!
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 #include "CvGameCoreDLLPCH.h"
 
 void CvPlayerTraits::SetPopulationUnhappinessModifier(int popUnhappinessModifier)

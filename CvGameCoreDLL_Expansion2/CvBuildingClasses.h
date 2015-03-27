@@ -242,6 +242,7 @@ public:
 	int GetYieldChangePerReligion(int i) const;
 	int* GetYieldChangePerReligionArray() const;
 	int GetYieldModifier(int i) const;;
+	void SetYieldModifier(int i, int iModifier);
 	int* GetYieldModifierArray() const;
 	int GetAreaYieldModifier(int i) const;
 	int* GetAreaYieldModifierArray() const;

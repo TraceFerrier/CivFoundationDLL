@@ -93,4 +93,19 @@ int CvLuaPlayer::lSetTraitTradeReligionModifier(lua_State* L)
 	return 1;
 }
 
+int CvLuaPlayer::lSetBuildingYieldModifier(lua_State* L)
+{
+	const char* strBuildingType = lua_tostring(L, 2);
+	const char* strYieldType = lua_tostring(L, 3);
+	const int iValue = lua_tointeger(L, 4);
+
+	BuildingTypes eBuilding = GC.getInfoTypeForString(strBuildingType);
+	YieldTypes eYieldType = GC.getInfoTypeForString(strYieldType);
+
+	CvBuildingEntry* pkBuildingInfo = GC.getBuildingInfo(eBuilding);
+	if (pkBuildingInfo != NULL)
+	{
+		pkBuildingInfo->SetYieldModifier(eYieldType, iValue);
+	}
+}
 

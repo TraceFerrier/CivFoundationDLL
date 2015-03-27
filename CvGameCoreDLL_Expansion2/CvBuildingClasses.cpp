@@ -1611,6 +1611,14 @@ int CvBuildingEntry::GetYieldModifier(int i) const
 	return m_piYieldModifier ? m_piYieldModifier[i] : -1;
 }
 
+void CvBuildingEntry::SetYieldModifier(int i, int iModifier)
+{
+	if (m_piYieldModifier != NULL && i < NUM_YIELD_TYPES && i > -1)
+	{
+		m_piYieldModifier[i] = iModifier;
+	}
+}
+
 /// Array of yield modifiers
 int* CvBuildingEntry::GetYieldModifierArray() const
 {
